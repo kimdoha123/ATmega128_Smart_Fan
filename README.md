@@ -38,7 +38,7 @@ stateDiagram-v2
     AUTO --> OFF
     미 --> 약
     약 --> AUTO
-
+```
 ```mermaid
 stateDiagram-v2
     [*] --> OFF
@@ -48,7 +48,7 @@ stateDiagram-v2
     7MIN --> OFF: Timer Expired
     5MIN --> OFF: Timer Canceled
     3MIN --> OFF: Timer Canceled
-
+```
 ## 💻 사용 방법
 1. 프로젝트 디렉터리로 이동합니다.
 2. 펌웨어를 업로드합니다.
