@@ -29,6 +29,7 @@ ATmega128A를 활용한 선풍기 제어 시스템입니다.
 - 알람 소리 제공
 ```mermaid
 stateDiagram-v2
+FAN
     OFF --> 미
     미 --> AUTO
     AUTO --> 강
@@ -41,7 +42,7 @@ stateDiagram-v2
 ```
 ```mermaid
 stateDiagram-v2
-    [*] --> OFF
+TIMER   
     OFF --> 3MIN: Start Timer (3분)
     3MIN --> 5MIN: Timer Set (5분)
     5MIN --> 7MIN: Timer Set (7분)
