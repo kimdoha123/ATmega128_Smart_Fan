@@ -27,6 +27,25 @@ ATmega128A를 활용한 선풍기 제어 시스템입니다.
 - 버튼을 통해 풍속 및 타이머 제어
 - LCD를 통해 상태 표시
 - 알람 소리 제공
+```mermaid
+stateDiagram-v2
+    OFF --> 미
+    미 --> AUTO
+    AUTO --> 강
+    강 --> 약
+    약 --> OFF
+    OFF --> AUTO
+    AUTO --> OFF
+    미 --> 약
+    약 --> AUTO
+
+```mermaid
+stateDiagram-v2
+    OFF --> 3MIN
+    3MIN --> 5MIN
+    5MIN --> 7MIN
+    7MIN --> OFF
+    5MIN --> OFF
 
 ## 💻 사용 방법
 1. 프로젝트 디렉터리로 이동합니다.
