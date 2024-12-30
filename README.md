@@ -41,11 +41,13 @@ stateDiagram-v2
 
 ```mermaid
 stateDiagram-v2
-    OFF --> 3MIN
-    3MIN --> 5MIN
-    5MIN --> 7MIN
-    7MIN --> OFF
-    5MIN --> OFF
+    [*] --> OFF
+    OFF --> 3MIN: Start Timer (3분)
+    3MIN --> 5MIN: Timer Set (5분)
+    5MIN --> 7MIN: Timer Set (7분)
+    7MIN --> OFF: Timer Expired
+    5MIN --> OFF: Timer Canceled
+    3MIN --> OFF: Timer Canceled
 
 ## 💻 사용 방법
 1. 프로젝트 디렉터리로 이동합니다.
